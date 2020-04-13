@@ -1,10 +1,10 @@
 
 
-/*placer la section loisirs en bas*/
 /*modifier la première puce de chaque ul*/
-/*gérer l'écart entre chaque h3 et p dans les li*/
 /*remplacer le lorem upsum par de vrais descriptions quand c'est possible*/
 /*à la fin, régler les tailles max selon les tailles d'écrans*/
+/*Une fois le projet fini, épurer le code, supprimer le CSS inutile 
+    et supprimer les classes/id inutiles*/
 
 
 
@@ -34,7 +34,6 @@ body{
 
 .container{
     display:flex;
-    justify-content: center;
     border: black solid 1px;
     font-family: OpenSans;
     max-width: 1000px;
@@ -45,8 +44,6 @@ p{
 }
 
 section{
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 10%;
 }
 
@@ -57,9 +54,10 @@ section{
 .left{
     background-color: #b71c1c;
     width: 34%;
+    position: relative;
 }
 
-.left section{
+.left p{
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -79,17 +77,25 @@ section{
     background-color: #424242;
     text-align: center;
     color: #b71c1c;
-    font-size: medium;
+}
+
+.loisirs{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .pictogrammes{
     display: flex;
     justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .pictogrammes img{
     border-radius: 50%;
     border: solid 1px black;
+    width: 48px;
 }
 
 /********************************************************************/
@@ -99,6 +105,16 @@ section{
 .right{
     width: 66%;
     background-color: white;
+}
+
+.right section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.right p{
+    margin-top: 0;
+    margin-bottom: 7px;
 }
 
 
@@ -121,7 +137,6 @@ section{
 }
 
 .titre p{
-    margin-top: 0;
     font-size: 1.5em;
 }
 
@@ -156,6 +171,7 @@ li .date{
 
 h3{
     font-family: OpenSansLight;
+    margin-bottom: 7px;
 }
 
 .contents{
@@ -166,4 +182,9 @@ h3{
 
 h4{
     font-family: OpenSansLight;
+    margin-bottom: 7px;
+}
+
+.formation, .experience, .recommandations{
+    margin-bottom: 33px;
 }
