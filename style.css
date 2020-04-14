@@ -70,7 +70,7 @@ section{
 .moi{
     border-radius: 50%;
     width: 50%;
-    border: solid #b71c1c 2px ; 
+    border: solid #d32f2f 3px ; 
 }
 
 .left h2{
@@ -96,6 +96,12 @@ section{
     border-radius: 50%;
     border: solid 1px black;
     width: 48px;
+}
+
+a{
+    text-decoration: underline black;
+    color: black;
+    font-style: italic;
 }
 
 /********************************************************************/
@@ -153,25 +159,40 @@ section{
 
 .sousTitre{
     display: flex;
+    align-items: center;
     border-bottom: solid 2px #b71c1c;
 }
 
 .sousTitre p{
     margin-right: 5%;
-    align-self: center;
+}
+
+.right h2{
+    margin-bottom: 7px;
+    margin-top: 0;
 }
 
 ul{
     color:#b71c1c;
+    margin-top: 35px;
 }
 
-li .date{
+li{
+    margin-bottom: 5%;
+}
+
+.date{
     width: 34%;
+}
+
+.job{
+    width: 66%;
 }
 
 h3{
     font-family: OpenSansLight;
     margin-bottom: 7px;
+    margin-top: 0;
 }
 
 .contents{
