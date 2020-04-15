@@ -1,10 +1,6 @@
 
-
-/*placer la section loisirs en bas*/
-/*modifier la première puce de chaque ul*/
-/*gérer l'écart entre chaque h3 et p dans les li*/
-/*remplacer le lorem upsum par de vrais descriptions quand c'est possible*/
-/*à la fin, régler les tailles max selon les tailles d'écrans*/
+/*perfectionner le texte "à propos de moi" (WIP)*/
+/*à la fin, régler les tailles max selon les tailles d'écrans (WIP)*/
 
 
 
@@ -34,7 +30,6 @@ body{
 
 .container{
     display:flex;
-    justify-content: center;
     border: black solid 1px;
     font-family: OpenSans;
     max-width: 1000px;
@@ -45,9 +40,13 @@ p{
 }
 
 section{
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 10%;
+}
+
+a{
+    text-decoration: underline black;
+    color: black;
+    font-style: italic;
 }
 
 /********************************************************************/
@@ -57,12 +56,21 @@ section{
 .left{
     background-color: #b71c1c;
     width: 34%;
+    position: relative;
 }
 
-.left section{
+.left p{
     margin-left: 15%;
     margin-right: 15%;
 }
+
+.left h2{
+    background-color: #424242;
+    text-align: center;
+    color: #b71c1c;
+}
+
+/************************PHOTO**************************************/
 
 .photo{
     text-align: center;
@@ -72,24 +80,28 @@ section{
 .moi{
     border-radius: 50%;
     width: 50%;
-    border: solid #b71c1c 2px ; 
+    border: solid #d32f2f 3px ; 
 }
 
-.left h2{
-    background-color: #424242;
-    text-align: center;
-    color: #b71c1c;
-    font-size: medium;
+/************************LOISIRS**************************************/
+
+.loisirs{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .pictogrammes{
     display: flex;
     justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .pictogrammes img{
     border-radius: 50%;
     border: solid 1px black;
+    width: 48px;
 }
 
 /********************************************************************/
@@ -101,8 +113,36 @@ section{
     background-color: white;
 }
 
+.right section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.right h2{
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+.right p{
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
 
 /************************TITRE**************************************/
+
+.titre{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.titre h1{
+    margin-bottom: 0;
+}
+
+.titre p{
+    font-size: 1.5em;
+}
 
 #nom{
     font-family: OpenSansLight;
@@ -116,54 +156,95 @@ section{
     font-size: 2em;
 }
 
-.titre h1{
-    margin-bottom: 0;
-}
-
-.titre p{
-    margin-top: 0;
-    font-size: 1.5em;
-}
-
 #dev{
     border-bottom: solid 1px #b71c1c;
 }
 
-.titre{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
 
 /***********************************CONTENTS****************************/
 
+.formation, .experience, .recommandations{
+    margin-bottom: 33px;
+}
+
 .sousTitre{
     display: flex;
+    align-items: center;
     border-bottom: solid 2px #b71c1c;
 }
 
 .sousTitre p{
     margin-right: 5%;
-    align-self: center;
 }
 
 ul{
     color:#b71c1c;
+    margin-top: 35px;
 }
 
-li .date{
-    width: 34%;
+li{
+    margin-bottom: 5%;
 }
 
-h3{
-    font-family: OpenSansLight;
+li:first-child{
+    display: list-item;
+    list-style-image: url("ressources/puce.png");
 }
 
 .contents{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: black;
 }
 
+.date{
+    width: 34%;
+}
+
+.job{
+    width: 66%;
+}
+
+h3{
+    font-family: OpenSansLight;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
 h4{
     font-family: OpenSansLight;
+    margin-bottom: 7px;
+}
+
+
+
+
+/********************************************************************/
+/****************************PETITS ECRANS***************************/
+/********************************************************************/
+
+@media all and (max-width: 980px)
+{
+
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .contact h2{
+        margin-top: 0;
+    }
+
+    .loisirs{
+        position: static;
+    }
+
 }
