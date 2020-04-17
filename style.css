@@ -103,6 +103,7 @@ a{
     border-radius: 50%;
     border: solid 1px white;
     width: 48px;
+    padding: 3px;
 }
 
 /********************************************************************/
