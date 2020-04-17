@@ -44,8 +44,8 @@ section{
 }
 
 a{
-    text-decoration: underline black;
-    color: black;
+    text-decoration: underline white;
+    color: white;
     font-style: italic;
 }
 
@@ -54,9 +54,10 @@ a{
 /********************************************************************/
 
 .left{
-    background-color: #b71c1c;
+    background-color: #651010;
     width: 34%;
     position: relative;
+    color: white;
 }
 
 .left p{
@@ -67,7 +68,7 @@ a{
 .left h2{
     background-color: #424242;
     text-align: center;
-    color: #b71c1c;
+    color: white;
 }
 
 /************************PHOTO**************************************/
@@ -80,7 +81,7 @@ a{
 .moi{
     border-radius: 50%;
     width: 50%;
-    border: solid #d32f2f 3px ; 
+    border: solid white 3px ; 
 }
 
 /************************LOISIRS**************************************/
@@ -100,7 +101,7 @@ a{
 
 .pictogrammes img{
     border-radius: 50%;
-    border: solid 1px black;
+    border: solid 1px white;
     width: 48px;
 }
 
