@@ -1,9 +1,3 @@
-
-/*perfectionner le texte "à propos de moi" (WIP)*/
-/*à la fin, régler les tailles max selon les tailles d'écrans (WIP)*/
-
-
-
 /********************************************************************/
 /*******************************FONTS********************************/
 /********************************************************************/
@@ -78,28 +72,28 @@ a{
     padding-top: 20px;
 }
 
-.moi{
+.photo img{
     border-radius: 50%;
     width: 50%;
     border: solid white 3px ; 
 }
 
-/************************LOISIRS**************************************/
+/************************HOBBIES**************************************/
 
-.loisirs{
+.hobbies{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.pictogrammes{
+.pictograms{
     display: flex;
     justify-content: space-around;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-.pictogrammes img{
+.pictograms img{
     border-radius: 50%;
     border: solid 1px white;
     width: 48px;
@@ -138,30 +132,30 @@ a{
 }
 
 
-/************************TITRE**************************************/
+/************************TITLE**************************************/
 
-.titre{
+.title{
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
-.titre h1{
+.title h1{
     margin-bottom: 0;
 }
 
-.titre p{
+.title p{
     font-size: 1.5em;
 }
 
-#nom{
+#lastname{
     font-family: OpenSansLight;
 }
 
-#prenom{
+#firstname{
     color: #b71c1c;
 }
 
-#prenom, #nom{
+#firstname, #lastname{
     font-size: 2em;
 }
 
@@ -172,11 +166,11 @@ a{
 
 /***********************************CONTENTS****************************/
 
-.formation, .experience, .recommandations{
+.education, .experience, .recommendations{
     margin-bottom: 33px;
 }
 
-.sousTitre{
+.subtitle{
     display: flex;
     align-items: center;
     border-bottom: solid 2px #b71c1c;
@@ -193,7 +187,7 @@ li{
 
 li:first-child{
     display: list-item;
-    list-style-image: url("ressources/puce.png");
+    list-style-image: url("ressources/bullet.png");
 }
 
 .contents{
@@ -248,7 +242,7 @@ h4{
         margin-top: 0;
     }
 
-    .loisirs{
+    .hobbies{
         position: static;
     }
 
@@ -268,7 +262,7 @@ h4{
 @media all and (max-width: 400px)
 {
 
-    #nom, #prenom{
+    #lastname, #firstname{
         font-size: 1.5em;
     }
 
@@ -291,7 +285,7 @@ h4{
 @media all and (max-width: 340px)
 {
 
-    #nom, #prenom{
+    #lastname, #firstname{
         font-size: 1.3em;
     }
 
@@ -299,7 +293,7 @@ h4{
         font-size: 130%;
     }
 
-    .sousTitre img{
+    .subtitle img{
         width : 25px;
     }
 
