@@ -173,7 +173,7 @@ a{
 
 /***********************************CONTENTS****************************/
 
-.education, .experience, .recommendations{
+.education, .experience, .languages{
     margin-bottom: 33px;
 }
 
@@ -181,6 +181,11 @@ a{
     display: flex;
     align-items: center;
     border-bottom: solid 2px #b71c1c;
+}
+
+.subtitle img{
+    margin-right: 5%;
+    margin-bottom: 7px;
 }
 
 ul{
@@ -273,7 +278,7 @@ h4{
         font-size: 1.5em;
     }
 
-    li .contents{
+    li .contents, .languages .contents{
         flex-direction: column;
         justify-content: flex-start;
     }
