@@ -38,9 +38,8 @@ section{
 }
 
 a{
-    text-decoration: underline white;
+    text-decoration: none;
     color: white;
-    font-style: italic;
 }
 
 /********************************************************************/
@@ -76,6 +75,13 @@ a{
     border-radius: 50%;
     width: 50%;
     border: solid white 3px ; 
+}
+
+/************************ABOUT **************************************/
+
+.about p{
+    line-height: 1.8em;
+    text-align: justify;
 }
 
 /************************HOBBIES**************************************/
@@ -166,7 +172,7 @@ a{
 
 /***********************************CONTENTS****************************/
 
-.education, .experience, .recommendations{
+.education, .experience, .languages, .skills{
     margin-bottom: 33px;
 }
 
@@ -176,18 +182,19 @@ a{
     border-bottom: solid 2px #b71c1c;
 }
 
+.subtitle img{
+    margin-right: 5%;
+    margin-bottom: 7px;
+}
+
 ul{
     color:#b71c1c;
     margin-top: 35px;
+    list-style-type: disc;
 }
 
 li{
     margin-bottom: 5%;
-}
-
-li:first-child{
-    display: list-item;
-    list-style-image: url("ressources/bullet.png");
 }
 
 .contents{
@@ -198,16 +205,16 @@ li:first-child{
 }
 
 .date{
-    width: 34%;
+    width: 18%;
 }
 
 .job{
-    width: 66%;
+    width: 82%;
 }
 
 h3{
     font-family: OpenSansLight;
-    margin-bottom: 7px;
+    margin-bottom: 0px;
     margin-top: 0;
 }
 
@@ -216,6 +223,25 @@ h4{
     margin-bottom: 7px;
 }
 
+.skills li{
+    margin-bottom: 0;
+}
+
+.skills article{
+    color: black;
+}
+
+#openClassRooms ul{
+    color: black;
+    padding-left: 13px;
+    font-size: small;
+    margin-top: 0;
+    list-style-type: circle;
+}
+
+#openClassRooms li{
+    margin-bottom: 7px;
+}
 
 
 
@@ -266,7 +292,7 @@ h4{
         font-size: 1.5em;
     }
 
-    li .contents{
+    li .contents, .languages .contents{
         flex-direction: column;
         justify-content: flex-start;
     }
