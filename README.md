@@ -1,2 +1,3 @@
 # CV
-deuxième projet : transformez votre CV en site Web.
+
+Projet mené pendant ma formation avec OpenClassRooms puis modifié et mis à jour pour servir de CV fonctionnel.
